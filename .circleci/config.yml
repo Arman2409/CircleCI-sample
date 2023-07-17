@@ -1,0 +1,19 @@
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build
+
+jobs:
+  build:
+    working_directory: ./
+    steps: 
+     - run:
+        name: install
+        command: npm install
+  deploy:
+    working_directory: ./
+    steps:
+      - run:
+        name: deploy
+        command: git push heroku master

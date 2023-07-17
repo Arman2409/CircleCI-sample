@@ -1,0 +1,21 @@
+{
+  "name": "CircleCI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "node ./dist/index",
+    "build": "ls -a"
+  },
+  "keywords": [],
+  "author": "Arman",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.4.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "circleci": "^0.3.3"
+  }
+}
