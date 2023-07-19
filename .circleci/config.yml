@@ -2,17 +2,17 @@ version: 2.1
 jobs:
   test: 
     docker:
-     - image: node:alplane
+     - image: node:alpline
     steps:
         - checkout
         - run: npm run build
   build: 
     docker:
-      - image: node:alplane
+      - image: node:alpline
     steps: 
       - run: npm run build
   deploy:
     docker:
-      - image: node:alplane
+      - image: node:alpline
     steps:
       - command: git push heroku master
