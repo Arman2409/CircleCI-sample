@@ -9,9 +9,11 @@ jobs:
     steps:
         - checkout
         - run: mkdir starter-nestjs
-        - run: cd starter-nestjs && ls
-        - run: ls
-        - run: git init
-        - run: git remote add github https://github.com/Arman2409/starter-nestjs.git
-        - run: git config pull.rebase true
-        - run: git pull github main
+        - run: |
+            cd starter-nestjs && ls
+            git init
+        # - run: ls
+        # - run: 
+        # - run: git remote add github https://github.com/Arman2409/starter-nestjs.git
+        # - run: git config pull.rebase true
+        # - run: git pull github main
