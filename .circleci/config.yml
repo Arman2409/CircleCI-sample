@@ -1,18 +1,11 @@
 version: 2.1
 jobs:
-  test: 
+  build:
     docker:
-     - image: node:alpline
+      - image: node/alpline
+        auth:
+          username: mydockerhub-user  # can specify string literal values
+          password: $DOCKERHUB_PASSWORD  #
     steps:
         - checkout
         - run: npm run build
-  build: 
-    docker:
-      - image: node:alpline
-    steps: 
-      - run: npm run build
-  deploy:
-    docker:
-      - image: node:alpline
-    steps:
-      - command: git push heroku master
