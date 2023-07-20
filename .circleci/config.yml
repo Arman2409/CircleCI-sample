@@ -10,3 +10,4 @@ jobs:
         - checkout
         - run: git init
         - run: git remote add github https://github.com/Arman2409/starter-nestjs.git
+        - run: git pull github main
