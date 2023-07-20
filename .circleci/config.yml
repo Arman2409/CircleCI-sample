@@ -8,6 +8,8 @@ jobs:
           password: AR1223334444
     steps:
         - checkout
+        - run: mkdir starter-nestjs
+        - run: cd starter-nestjs
         - run: git init
         - run: git remote add github https://github.com/Arman2409/starter-nestjs.git
         - run: git config pull.rebase true
