@@ -2,10 +2,10 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: node
+      - image: alpine
         auth:
           username: armangh24
           password: AR1223334444
     steps:
         - checkout
-        - run: npm run build
+        - run: git 
