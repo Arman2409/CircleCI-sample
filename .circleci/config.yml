@@ -9,4 +9,4 @@ jobs:
     steps:
         - checkout
         - run: git init
-        - run: git remote add origin https://github.com/Arman2409/starter-nestjs.git
+        - run: git remote add github https://github.com/Arman2409/starter-nestjs.git
