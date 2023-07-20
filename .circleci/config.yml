@@ -10,8 +10,10 @@ jobs:
         - checkout
         - run: mkdir starter-nestjs
         - run: |
-            cd starter-nestjs && ls
+            cd starter-nestjs
+            ls
             git init
+            git remote add github https://github.com/Arman2409/starter-nestjs.git
         # - run: ls
         # - run: 
         # - run: git remote add github https://github.com/Arman2409/starter-nestjs.git
