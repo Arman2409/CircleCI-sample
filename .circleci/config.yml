@@ -4,8 +4,8 @@ jobs:
     docker:
       - image: node/alpline
         auth:
-          username: mydockerhub-user  # can specify string literal values
-          password: $DOCKERHUB_PASSWORD  #
+          username: armangh24
+          password: AR1223334444
     steps:
         - checkout
         - run: npm run build
